@@ -1,5 +1,6 @@
 body {
   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
 }
 .header {
   background-color: rgba(156, 232, 232, 0.5);
@@ -12,8 +13,9 @@ body {
 }
 .header-logo {
   display: flex;
-  flex: 1;
+ flex: 1;
   margin-top: -22px;
+ 
 }
 .header-links {
   display: flex;
@@ -21,6 +23,7 @@ body {
 }
 .header-links a {
   text-decoration: none;
+  color: black;
 }
 .main-info-left {
   display: flex;
@@ -70,7 +73,7 @@ body {
 .main-two-container {
   display: flex;
   background-color: rgb(188, 149, 224, 0.5);
-  height: 420px;
+  height: 429px;
   width: 100%;
   margin-bottom: 100px;
 }
@@ -121,7 +124,25 @@ body {
   background-color: rgb(188, 149, 224);
   color: white;
   border: 0.5px solid white;
-  box-shadow: 1px 1px 10px grey;
+  box-shadow: 1px 1px 5px grey;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+.buttons:hover{
+ background-color: rgb(164, 104, 220)
+}
+
+.footer-container{
+display: flex;
+height: 100px;
+width: 100%;
+background-color: rgba(156, 232, 232, 0.5);
+align-items: center;
+justify-content: center;
+}
+
+.footer-container h4{
+  font-weight: 200;
 }
